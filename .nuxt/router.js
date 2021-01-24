@@ -48,6 +48,10 @@ export const routerOptions = {
       component: _3793fdac,
       name: "profile"
     }, {
+      path: "/profile/:username/:favorited",
+      component: _3793fdac,
+      name: "profilef"
+    }, {
       path: "/settings",
       component: _33ca34c2,
       name: "settings"

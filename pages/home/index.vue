@@ -26,7 +26,10 @@
               <li class="nav-item">
                 <nuxt-link class="nav-link" :class="{active: tab==='global_feed'}"
                 :to="{
-                  name:'home'
+                  name:'home',
+                  query:{
+                    tab: 'global_feed'
+                  }
                 }" exact>Global Feed</nuxt-link>
               </li>
                <li v-if="tag" class="nav-item" >
@@ -86,6 +89,9 @@
               <span>Read more...</span>
             </nuxt-link>
           </div>
+          <div class="article-preview" v-if="!articles.length">
+            {{tab==='your_feed' ? 'No articles are here... yet.' :'Loading articles...'}}
+          </div>
            <!-- 分页列表 -->
           <nav>
             <ul class="pagination">
@@ -143,15 +149,15 @@ import { getTags } from '@/api/tag'
 import {mapState} from 'vuex'
 export default {
   name: 'HomeIndex',
-  async asyncData ({ query }) {
+  async asyncData ({ query,store }) {
     const page = Number.parseInt(query.page|| 1)
     const limit = 20
     const tab = query.tab || 'global_feed'
     const tag = query.tag
 
-    const loadArticles = tab === 'global_feed'
-      ? getArticles
-      : getCareArticles
+    const loadArticles = store.state.user && tab === 'your_feed'
+      ? getCareArticles
+      : getArticles
 
     const [ articleRes, tagRes ] = await Promise.all([
       loadArticles({
@@ -168,13 +174,13 @@ export default {
     articles.forEach(article => article.favoriteDisabled = false)
 
     return {
-      articles, // 文章列表
+      articles,      // 文章列表
       articlesCount, // 文章总数
-      tags, // 标签列表
-      limit, // 每页大小
-      page, // 页码
-      tab, // 选项卡
-      tag // 数据标签
+      tags,          // 标签列表
+      limit,         // 每页大小
+      page,          // 页码
+      tab,           // 选项卡
+      tag            // 数据标签
     }
   },
   watchQuery: ['page', 'tag', 'tab'],

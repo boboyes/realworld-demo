@@ -6,46 +6,43 @@
       {
         "path": "",
         "name": "home",
-        "component": "E:\\\\lagou-study\\\\learning-notes\\\\fed-e-task-03-03\\\\code\\\\realworld-nuxtjs-bobo\\\\pages\\\\home",
-        "_name": "_4f1394fe"
+        "component": "E:\\\\lagou-study\\\\learning-notes\\\\fed-e-task-03-03\\\\code\\\\realworld-nuxtjs-bobo\\\\pages\\\\home"
       },
       {
         "path": "/login",
         "name": "login",
-        "component": "E:\\\\lagou-study\\\\learning-notes\\\\fed-e-task-03-03\\\\code\\\\realworld-nuxtjs-bobo\\\\pages\\\\login",
-        "_name": "_d8d159ac"
+        "component": "E:\\\\lagou-study\\\\learning-notes\\\\fed-e-task-03-03\\\\code\\\\realworld-nuxtjs-bobo\\\\pages\\\\login"
       },
       {
         "path": "/register",
         "name": "register",
-        "component": "E:\\\\lagou-study\\\\learning-notes\\\\fed-e-task-03-03\\\\code\\\\realworld-nuxtjs-bobo\\\\pages\\\\login",
-        "_name": "_d8d159ac"
+        "component": "E:\\\\lagou-study\\\\learning-notes\\\\fed-e-task-03-03\\\\code\\\\realworld-nuxtjs-bobo\\\\pages\\\\login"
       },
       {
         "path": "/profile/:username",
         "name": "profile",
-        "component": "E:\\\\lagou-study\\\\learning-notes\\\\fed-e-task-03-03\\\\code\\\\realworld-nuxtjs-bobo\\\\pages\\\\profile",
-        "_name": "_3793fdac"
+        "component": "E:\\\\lagou-study\\\\learning-notes\\\\fed-e-task-03-03\\\\code\\\\realworld-nuxtjs-bobo\\\\pages\\\\profile"
+      },
+      {
+        "path": "/profile/:username/:favorited",
+        "name": "profilef",
+        "component": "E:\\\\lagou-study\\\\learning-notes\\\\fed-e-task-03-03\\\\code\\\\realworld-nuxtjs-bobo\\\\pages\\\\profile"
       },
       {
         "path": "/settings",
         "name": "settings",
-        "component": "E:\\\\lagou-study\\\\learning-notes\\\\fed-e-task-03-03\\\\code\\\\realworld-nuxtjs-bobo\\\\pages\\\\settings",
-        "_name": "_33ca34c2"
+        "component": "E:\\\\lagou-study\\\\learning-notes\\\\fed-e-task-03-03\\\\code\\\\realworld-nuxtjs-bobo\\\\pages\\\\settings"
       },
       {
         "path": "/editor",
         "name": "editor",
-        "component": "E:\\\\lagou-study\\\\learning-notes\\\\fed-e-task-03-03\\\\code\\\\realworld-nuxtjs-bobo\\\\pages\\\\editor",
-        "_name": "_5a719468"
+        "component": "E:\\\\lagou-study\\\\learning-notes\\\\fed-e-task-03-03\\\\code\\\\realworld-nuxtjs-bobo\\\\pages\\\\editor"
       },
       {
         "path": "/article/:slug",
         "name": "article",
-        "component": "E:\\\\lagou-study\\\\learning-notes\\\\fed-e-task-03-03\\\\code\\\\realworld-nuxtjs-bobo\\\\pages\\\\article",
-        "_name": "_69ff7712"
+        "component": "E:\\\\lagou-study\\\\learning-notes\\\\fed-e-task-03-03\\\\code\\\\realworld-nuxtjs-bobo\\\\pages\\\\article"
       }
-    ],
-    "_name": "_42d3e0ee"
+    ]
   }
 ]
